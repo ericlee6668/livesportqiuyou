@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:srlEnableOverScrollDrag="true">
+
+    <com.scwang.smart.refresh.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlClassicsSpinnerStyle="Translate"
+        app:srlTextLoading="正在加载" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        tools:ignore="MissingClass">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="143dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_marginBottom="@dimen/dp10"
+                android:src="@mipmap/ic_splash_logo" />
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:delay_time="3000"
+                app:image_scale_type="center_crop"
+                app:indicator_drawable_selected="@drawable/bg_home_indicator_selected"
+                app:indicator_drawable_unselected="@drawable/bg_home_indicator_unselected"
+                app:indicator_height="7dp"
+                app:indicator_margin="10dp"
+                app:indicator_width="7dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff7f7f7"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:overScrollMode="never"
+                android:padding="@dimen/dp10"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:src="@mipmap/icon_home_hot" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:text="推荐直播"
+                    android:textColor="#ff2b2626"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:drawableEnd="@mipmap/main_more"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="查看更多"
+                    android:textColor="#B32b2626"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:overScrollMode="never"
+                android:padding="5dp"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10"
+                android:background="#fff7f7f7" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_anchor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center|start">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:src="@mipmap/icon_home_anchor" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:text="推荐主播"
+                    android:textColor="#ff2b2626"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:background="@drawable/bg_touch"
+                    android:drawableEnd="@mipmap/icon_home_refresh"
+                    android:drawablePadding="@dimen/dp5"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="换一批"
+                    android:textColor="#B32b2626"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:padding="@dimen/dp5"
+                android:id="@+id/home_anchor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:background="#fff7f7f7" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+<!--    <com.scwang.smart.refresh.footer.ClassicsFooter-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="@dimen/dp_40"-->
+<!--        android:background="#fff7f7f7"-->
+<!--        app:srlClassicsSpinnerStyle="Translate"-->
+<!--        app:srlTextLoading="@string/refresh_footer_nothing" />-->
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

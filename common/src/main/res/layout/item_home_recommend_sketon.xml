@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.yunbao.common.custom.RatioRoundImageView
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray5"
+            android:scaleType="centerCrop"
+            app:ri_ratio="0.5625"
+            app:riv_corner_radius="5dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_game_name"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray5"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#ff2b2626"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_game_des"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:background="@color/gray5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#B32b2626"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ll_num"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:background="@color/gray5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

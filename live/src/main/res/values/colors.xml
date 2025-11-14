@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="live_ff5116">#FF5116</color>
+    <color name="live_2B2626">#2B2626</color>
+    <color name="live_f7f7f7">#F7F7F7</color>
+    <color name="live_fff1ed">#fffff1ed</color>
+    <color name="live_1890FF">#1890FF</color>
+    <color name="live_B32b2626">#B32b2626</color>
+    <color name="live_f5f6f7">#F5F6F7</color>
+    <color name="live_959292">#959292</color>
+
+    <color name="color_orange">#FAAD14</color>
+    <color name="color_supper_tip_normal">#804fc6be</color>
+    <color name="bg_supper_selected">#13C2C2</color>
+
+    <color name="live_FFE490">#FFE490</color>
+    <color name="live_EE9E00">#EE9E00</color>
+    <color name="live_0CC3C1">#0CC3C1</color>
+    <color name="live_87E7DE">#87E7DE</color>
+    <color name="live_error_bg">#3F3632</color>
+    <color name="black">#000000</color>
+    <color name="live_gary">#EBEBEB</color>
+    <color name="away_progress_color">#A4A4A4</color>
+    <color name="home_progress_color">#2ED83A</color>
+    <color name="live_background">#F0F0F0</color>
+    <color name="match_tab_color">#4D76FF</color>
+
+</resources>

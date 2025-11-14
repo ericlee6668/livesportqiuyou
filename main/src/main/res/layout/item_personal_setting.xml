@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yb_50dp"
+        android:background="@drawable/bg_touch"
+        android:paddingLeft="@dimen/yb_15dp"
+        android:paddingRight="@dimen/yb_15dp">
+
+        <TextView
+            android:id="@+id/tvPersonalSettingContent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/yb_10dp"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/yb_15sp"
+            tools:text="夜间模式" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_arrow_right" />
+
+    </RelativeLayout>
+
+</LinearLayout>

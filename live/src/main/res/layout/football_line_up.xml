@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.yunbao.live.views.LineUpView
+            android:id="@+id/imgLineUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:venueSrc="@drawable/icon_football_field"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgHomeTeam"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_home_team_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Space
+            android:id="@+id/spaceAway"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgLineUp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageView
+            android:id="@+id/awayTeamBg"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_away_team_bg"
+            app:layout_constraintTop_toTopOf="@id/spaceAway" />
+
+        <ImageView
+            android:id="@+id/awayTeamLogo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/dp6"
+            app:layout_constraintBottom_toBottomOf="@id/awayTeamBg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/awayTeamBg"
+            tools:src="@mipmap/icon_default_logo" />
+
+        <TextView
+            android:id="@+id/awayTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/awayTeamBg"
+            app:layout_constraintLeft_toRightOf="@id/awayTeamLogo"
+            app:layout_constraintTop_toTopOf="@id/awayTeamBg"
+            tools:text="曼联" />
+
+        <TextView
+            android:id="@+id/awayTeamFormation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_formation_bg"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/spaceAway"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spaceAway"
+            tools:text="4-4-1-1" />
+
+        <ImageView
+            android:id="@+id/homeTeamLogo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/dp6"
+            app:layout_constraintBottom_toBottomOf="@+id/imgHomeTeam"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:src="@mipmap/icon_default_logo" />
+
+        <TextView
+            android:id="@+id/homeTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/homeTeamLogo"
+            app:layout_constraintLeft_toRightOf="@id/homeTeamLogo"
+            app:layout_constraintTop_toTopOf="@id/homeTeamLogo"
+            tools:text="曼联" />
+
+        <TextView
+            android:id="@+id/homeTeamFormation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_formation_bg"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/homeTeamLogo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/homeTeamLogo"
+            tools:text="4-4-1-1" />
+
+        <TextView
+            android:id="@+id/txtSubstitute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:layout_marginTop="@dimen/dp20"
+            android:drawablePadding="@dimen/dp6"
+            android:text="@string/football_substitute"
+            android:textColor="#1A1A1C"
+            app:drawableStartCompat="@mipmap/icon_football_replace"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/awayTeamBg" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/teamLineUpImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="imgHomeTeam,imgLineUp,spaceAway,awayTeamBg,awayTeamLogo,awayTeamName,homeTeamLogo,homeTeamName,homeTeamFormation,awayTeamFormation"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/footballHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSubstitute"
+            app:layout_constraintWidth_percent="0.5">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgHomeIcon"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                app:shapeAppearanceOverlay="@style/ShapeOverlay.Circle"
+                tools:src="@mipmap/icon_home_hot" />
+
+            <TextView
+                android:id="@+id/txtHomeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/dp6"
+                android:textColor="@color/black" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/footballAway"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp20"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSubstitute"
+            app:layout_constraintWidth_percent="0.5">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgAwayIcon"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                app:shapeAppearanceOverlay="@style/ShapeOverlay.Circle"
+                tools:src="@mipmap/icon_home_hot" />
+
+            <TextView
+                android:id="@+id/txtAwayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/dp6"
+                android:textColor="@color/black"
+                tools:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutSubstitute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:divider="@drawable/live_up_divider"
+            app:dividerPadding="1dp"
+            app:layout_constraintTop_toBottomOf="@id/footballAway"
+            app:showDividers="middle">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/homeSubstitute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:divider="@drawable/live_up_divider"
+                app:dividerPadding="1dp"
+                app:showDividers="middle|end" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/awaySubstitute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:divider="@drawable/live_up_divider"
+                app:dividerPadding="1dp"
+                app:showDividers="middle|end" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/txtInjury"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp6"
+            android:layout_marginTop="@dimen/dp20"
+            android:drawablePadding="@dimen/dp6"
+            android:text="@string/football_injury"
+            android:textColor="#1A1A1C"
+            app:drawableStartCompat="@drawable/icon_line_injury"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutSubstitute" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/footballHomeInjury"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp20"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtInjury"
+            app:layout_constraintWidth_percent="0.5">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgHomeInjury"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                app:shapeAppearanceOverlay="@style/ShapeOverlay.Circle"
+                tools:src="@mipmap/icon_home_hot" />
+
+            <TextView
+                android:id="@+id/txtHomeInjury"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/dp6"
+                android:textColor="@color/black" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/footballAwayInjury"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp20"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtInjury"
+            app:layout_constraintWidth_percent="0.5">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgAwayInjury"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                app:shapeAppearanceOverlay="@style/ShapeOverlay.Circle"
+                tools:src="@mipmap/icon_home_hot" />
+
+            <TextView
+                android:id="@+id/txtAwayInjury"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="@dimen/dp6"
+                android:textColor="@color/black"
+                tools:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutInjury"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:divider="@drawable/live_up_divider"
+            app:dividerPadding="1dp"
+            app:layout_constraintTop_toBottomOf="@id/footballAwayInjury"
+            app:showDividers="middle">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/homeInjury"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:divider="@drawable/live_up_divider"
+                app:dividerPadding="1dp"
+                app:showDividers="middle|end" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/awayInjury"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:divider="@drawable/live_up_divider"
+                app:dividerPadding="1dp"
+                app:showDividers="middle|end" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

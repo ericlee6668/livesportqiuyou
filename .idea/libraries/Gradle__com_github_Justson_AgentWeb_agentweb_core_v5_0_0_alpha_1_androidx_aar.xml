@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Justson.AgentWeb:agentweb-core:v5.0.0-alpha.1-androidx@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74c67710df658464ad1bb24de6b8c46f/jetified-agentweb-core-v5.0.0-alpha.1-androidx/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74c67710df658464ad1bb24de6b8c46f/jetified-agentweb-core-v5.0.0-alpha.1-androidx/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/74c67710df658464ad1bb24de6b8c46f/jetified-agentweb-core-v5.0.0-alpha.1-androidx/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1648cd7a5ee18ac15249107df747c139/jetified-agentweb-core-v5.0.0-alpha.1-androidx/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1648cd7a5ee18ac15249107df747c139/jetified-agentweb-core-v5.0.0-alpha.1-androidx/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1648cd7a5ee18ac15249107df747c139/jetified-agentweb-core-v5.0.0-alpha.1-androidx/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Justson.AgentWeb/agentweb-core/v5.0.0-alpha.1-androidx/3304724d57f908a4cc8dae3956bdcc7b8d1e0ac5/agentweb-core-v5.0.0-alpha.1-androidx-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,55 @@
+android {
+    flavorDimensions "platform"
+    productFlavors {
+        qy {
+            applicationId "com.yunque.phonelive"
+            resValue "string", "app_name", "球友直播"
+            manifestPlaceholders = [
+                    //https://liveapi.ncyrsc.com,https://liveapi.podapi.com,https://liveapi.yabanghn.com
+//                    serverHost       : "https://liveapi.ncyrsc.com,https://liveapi.podapi.com,https://liveapi.yabanghn.com",//直播api正式服
+                    serverHost       : "https://liveapi.ncyrsc.com,https://liveapi.wanmeiyx.com,https://liveapi.podapi.com",//直播api正式服
+
+
+                    //极光推送 IM
+                    jpushAppKey      : "fcc0bdd35b463cd65e99564a",
+
+                    //友盟统计
+                    umengAppKey      : "5fb0dadb5f5ec3628817bc3c",
+                    //分享域名
+                    shareLink      : ":https://qiuyou.live"
+
+            ]
+        }
+        liveAppTest {
+            applicationId "com.yunque.testPhonelive"
+            resValue "string", "app_name", "直播(测试)"
+            manifestPlaceholders = [
+//                    serverHost       : "http://test.zbitcloud.com", //直播api测试服
+                    serverHost       : "http://liveapi.zbitcloud.com", //直播api测试服
+//                    serverHost       : "http://sportsapi.zbitcloud.com", //直播api测试服
+
+                    videoHost        : "http://videoapi.zbitcloud.com", //短视频api测试服
+
+
+                    sportsHost       : "http://sportsapi.zbitcloud.com", //体育测试服
+
+
+                    websocket_match  : "ws://139.9.54.17:9501/", //赛事测试ws
+
+                    websocket_chat   : "ws://124.71.10.194:9511/", //聊天测试ws
+
+                    //                                  极光推送 IM
+                    jpushAppKey      : "fcc0bdd35b463cd65e99564a",
+
+                    //                                  友盟统计
+                    umengAppKey      : "5fa125aa45b2b751a922cb18",
+
+                    //分享域名
+                    shareLink      : "https://hhzb.live"
+
+            ]
+        }
+
+    }
+
+}

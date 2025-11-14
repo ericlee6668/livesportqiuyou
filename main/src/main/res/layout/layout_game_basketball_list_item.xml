@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_touch"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp1"
+        android:background="@drawable/bg_touch"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20"
+        android:paddingBottom="@dimen/dp20">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_team_a"
+                android:layout_width="@dimen/yb_38dp"
+                android:layout_height="@dimen/yb_38dp"
+                tools:src="@mipmap/icon_default_logo" />
+
+            <TextView
+                android:id="@+id/tv_team_a_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/black_6B6767"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="列宁格拉" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/black2"
+                    android:textSize="12sp"
+                    tools:text="20:08" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_ball"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        tools:src="@mipmap/icon_basketball_ing" />
+
+                    <TextView
+                        android:id="@+id/tv_game_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp3"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/red1"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:text="欧洲杯" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_a_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/red1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="5" />
+
+                <TextView
+                    android:id="@+id/tv_game_des"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/red1"
+                    android:textSize="12sp"
+                    tools:text="下半场69’" />
+
+                <TextView
+                    android:id="@+id/tv_b_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/red1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bg_play_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp15"
+                android:gravity="center"
+                android:paddingStart="@dimen/dp5"
+                android:paddingTop="@dimen/dp3"
+                android:paddingEnd="@dimen/dp5"
+                android:paddingBottom="@dimen/dp3"
+                tools:background="@drawable/bg_shape_rounded_corners_red_normal">
+
+                <TextView
+                    android:id="@+id/tv_play_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="正在直播" />
+
+                <ImageView
+                    android:id="@+id/iv_play_status"
+                    android:layout_width="14dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="@dimen/dp5"
+                    tools:src="@mipmap/icon_ball_playing" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_team_b"
+                android:layout_width="@dimen/yb_38dp"
+                android:layout_height="@dimen/yb_38dp"
+                tools:src="@mipmap/icon_default_logo" />
+
+            <TextView
+                android:id="@+id/tv_team_b_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/black_6B6767"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="莫斯科罗蒂娜" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/gray2" />
+</LinearLayout>

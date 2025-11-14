@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/play_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="264dp"
+                    android:background="#000"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/rl_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/live_iv_back"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/icon_back_white" />
+
+                    <TextView
+                        android:id="@+id/live_tv_live_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dp20"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:text="202法的说服力f三方324" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/live_ll_match_info"
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:background="#3F3632"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_game_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_game_back"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/icon_back_white" />
+
+                    <TextView
+                        android:id="@+id/tv_game_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dp40"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        tools:text="202法的说服定交第三方324" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/live_tv_date_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    tools:text="今晚 18:00 第二局" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/live_iv_team_one_icon"
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:src="@mipmap/icon_default_logo"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_chainStyle="packed" />
+
+                        <TextView
+                            android:id="@+id/live_iv_team_one_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            app:layout_constraintLeft_toLeftOf="@+id/live_iv_team_one_icon"
+                            app:layout_constraintRight_toRightOf="@+id/live_iv_team_one_icon"
+                            app:layout_constraintTop_toBottomOf="@+id/live_iv_team_one_icon"
+                            tools:text="LGD" />
+
+
+                        <TextView
+                            android:id="@+id/live_view_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="24sp"
+                            app:layout_constraintLeft_toRightOf="@+id/live_iv_team_one_icon"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="VS" />
+
+                        <TextView
+                            android:id="@+id/live_tv_txt_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#90ffffff"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/live_iv_team_one_name"
+                            app:layout_constraintLeft_toLeftOf="@+id/live_view_stats"
+                            app:layout_constraintRight_toRightOf="@+id/live_view_stats"
+                            tools:text="未开赛" />
+
+
+                        <ImageView
+                            android:id="@+id/live_iv_team_two_icon"
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:layout_marginLeft="40dp"
+                            android:src="@mipmap/icon_default_logo"
+                            app:layout_constraintLeft_toRightOf="@+id/live_view_stats"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/live_iv_team_two_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            app:layout_constraintLeft_toLeftOf="@+id/live_iv_team_two_icon"
+                            app:layout_constraintRight_toRightOf="@+id/live_iv_team_two_icon"
+                            app:layout_constraintTop_toBottomOf="@+id/live_iv_team_two_icon"
+                            tools:text="IG" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_live_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/live_tv_living"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_live_btn_white"
+                        android:drawableStart="@mipmap/icon_live_video"
+                        android:drawablePadding="4dp"
+                        android:paddingStart="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="4dp"
+                        android:text="视频直播"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/live_tv_animation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:background="@drawable/bg_live_btn_white"
+                        android:drawableStart="@mipmap/icon_live_animation"
+                        android:drawablePadding="4dp"
+                        android:paddingStart="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="4dp"
+                        android:text="动画直播"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/live_ll_bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl_top">
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+            <LinearLayout
+                android:id="@+id/live_ll_living_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:gravity="center"
+                        android:text="聊天"
+                        android:textColor="#FF5116"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#FF5116" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="数据"
+                    android:textColor="#602b2626"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="指数"
+                    android:textColor="#602b2626"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="41dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="阵容"-->
+<!--                    android:textColor="#602b2626"-->
+<!--                    android:textSize="13sp"-->
+<!--                    android:textStyle="bold" />-->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="选手"
+                    android:textColor="#602b2626"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="41dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="分析"
+                    android:textColor="#602b2626"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/indicator" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/page_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

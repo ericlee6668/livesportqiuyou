@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6"
+        android:layout_marginBottom="@dimen/dp6"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="射门" />
+
+    <TextView
+        android:id="@+id/txtHomeScore"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/txtType"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtType"
+        tools:text="21" />
+
+    <ProgressBar
+        android:id="@+id/homeRating"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:max="100"
+        android:progressDrawable="@drawable/home_statistics_progress"
+        app:layout_constraintBottom_toBottomOf="@id/txtType"
+        app:layout_constraintLeft_toRightOf="@id/txtHomeScore"
+        app:layout_constraintRight_toLeftOf="@id/txtType"
+        app:layout_constraintTop_toTopOf="@id/txtType"
+        tools:progress="50" />
+
+    <TextView
+        android:id="@+id/txtAwayScore"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/txtType"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtType"
+        tools:text="13" />
+
+    <ProgressBar
+        android:id="@+id/awayRating"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:max="100"
+        android:progressDrawable="@drawable/away_statistics_progress"
+        app:layout_constraintBottom_toBottomOf="@id/txtType"
+        app:layout_constraintLeft_toRightOf="@id/txtType"
+        app:layout_constraintRight_toLeftOf="@id/txtAwayScore"
+        app:layout_constraintTop_toTopOf="@id/txtType"
+        tools:progress="50" />
+</androidx.constraintlayout.widget.ConstraintLayout>

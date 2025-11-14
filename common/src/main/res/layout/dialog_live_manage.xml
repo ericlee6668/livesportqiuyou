@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/common_tv_set_manage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_dialog_2"
+        android:gravity="center"
+        android:text="设为管理"
+        android:textColor="@color/live_2B2626"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/common_tv_manage_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_dialog_2"
+        android:gravity="center"
+        android:text="管理员列表"
+        android:textColor="@color/live_2B2626"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/common_tv_forbidden_words"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_dialog_2"
+        android:gravity="center"
+        android:text="永久禁言"
+        android:textColor="@color/live_2B2626"
+        android:textSize="14sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fffff1ed"
+        />
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="#FF5116"
+        android:textSize="14sp"
+        />
+</LinearLayout>

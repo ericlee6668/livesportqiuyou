@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunbao.common.custom.MyLinearLayout4 xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="85dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10"
+    app:mll4_count="4">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_anchor"
+        android:layout_width="@dimen/yb_43dp"
+        android:layout_height="@dimen/yb_43dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_default_logo"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/tv_anchor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="#ff2b2626"
+        android:textSize="12sp"
+        tools:text="正大体育" />
+
+    <TextView
+        android:id="@+id/tv_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/bg_btn_subscribe"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp6"
+        android:paddingRight="@dimen/dp15"
+        android:paddingBottom="@dimen/dp5"
+        android:textColor="#ffffffff"
+        android:textSize="10sp"
+        tools:text="订阅" />
+</com.yunbao.common.custom.MyLinearLayout4>

@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- 主播 -->
+    <string name="item_subscribe">订阅</string>
+    <string name="item_subscribed">已订阅</string>
+
+    <!--  个人设置 -->
+    <string name="personal_setting">个人设置</string>
+    <string name="night_model">夜间模式</string>
+    <string name="private_policy">隐私政策</string>
+    <string name="server_protocol">服务协议</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="clear_cache">清楚缓存</string>
+    <string name="version_name">版本号：</string>
+
+
+    <string name="input_phone_pre">+86</string>
+    <string name="game_not_start">未开赛</string>
+    <string name="the_first_inning">第一局</string>
+    <string name="the_second_inning">第二局</string>
+    <string name="the_third_inning">第三局</string>
+    <string name="the_fourth_inning">第四局</string>
+    <string name="the_five_inning">第五局</string>
+    <string name="over">完</string>
+    <string name="has_been_postponed">已延期</string>
+    <string name="has_delete">已删除</string>
+    <string name="tomorrow">" 明天"</string>
+    <string name="is_over">"已结束 "</string>
+    <string name="subscribe_anchor">订阅主播</string>
+
+</resources>

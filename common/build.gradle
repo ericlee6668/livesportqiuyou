@@ -1,0 +1,172 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion 28
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+//        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            buildConfigField 'String', "GITEE", "\"https://gitee.com/bw013/qy/raw/master/real.json\""
+//            buildConfigField 'String', "GITLAB", "\"https://gitlab.com/bw-13/qy/-/raw/main/real.json\""
+            buildConfigField 'String', "GITEE", "\"https://gitee.com/roge12345678/ly/raw/master/real.json\""
+            buildConfigField 'String', "GITLAB", "\"https://gitlab.com/lto220849/LY/-/raw/main/real.json\""
+        }
+        debug {
+//            buildConfigField "String", "GITEE", "\"https://gitee.com/roge12345678/xn/raw/master/real.json\""
+//            buildConfigField "String", "GITLAB", "\"https://gitlab.com/lto220849/xn/-/raw/main/real.json\""
+            buildConfigField "String", "GITEE", "\"https://gitee.com/roge12345678/test/raw/master/test.json\""
+            buildConfigField "String", "GITLAB", "\"https://gitlab.com/lto220849/test/-/raw/main/test.json\""
+        }
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.dependencies["appcompat-v7"]
+    api rootProject.ext.dependencies["recyclerview-v7"]
+    api rootProject.ext.dependencies["cardview-v7"]
+    api rootProject.ext.dependencies["design"]
+    api rootProject.ext.dependencies["multidex"]
+    api files('../libs/commons-io-1.4.jar')
+    api files('../libs/esdk-obs-android-3.20.1.jar') {
+
+    }
+
+    //    //okHttp网络请求
+    api rootProject.ext.dependencies["okhttp"]
+
+    //fastJson解析json
+    api rootProject.ext.dependencies["fastjson"]
+
+    //eventbus事件总线
+    api rootProject.ext.dependencies["eventbus"]
+
+    //使用Glide加载图片
+    api rootProject.ext.dependencies["glide"]
+
+    //一个基于Glide的transformation库,拥有裁剪,着色,模糊,滤镜等多种转换效果
+    api rootProject.ext.dependencies["glide-transformations"]
+
+    //带圆角，边框的的ImageView
+    api rootProject.ext.dependencies["roundedimageview"]
+
+    //gif库，播放礼物gif用
+    api rootProject.ext.dependencies["gif-drawable"]
+
+    //svga播放器
+    api rootProject.ext.dependencies["SVGAPlayer"]
+
+    //七牛云存储
+    api rootProject.ext.dependencies["qiniu-sdk"]
+
+    //腾讯云存储
+    api rootProject.ext.dependencies["tencent-cosxml"]
+
+    //微信sdk,支付登录分享
+//    api rootProject.ext.dependencies["tencent-wechat-sdk"]
+
+    //腾讯bugly
+
+    //api rootProject.ext.dependencies["tencent-bugly"]
+
+    //友盟统计
+    api rootProject.ext.dependencies["umeng-common"]
+    //asms包依赖(必选)
+    api rootProject.ext.dependencies["umeng-asms"]
+    //native crash包依赖(必选)
+    api rootProject.ext.dependencies["umeng-crash"]
+    //友盟统计
+//    api rootProject.ext.dependencies["umeng-analytics"]
+
+    //图片裁剪
+    api rootProject.ext.dependencies["ucrop"]
+
+    //支付宝sdk
+    api files('libs/alipaySdk-20180601.jar')
+
+    //腾讯定位，地图sdk
+    api files('libs/TencentLocationSdk_v6.2.5.3.jar')
+    api files('libs/TencentMapSDK_1.2.8.1.jar')
+
+    //下拉刷新上拉加载
+//    api rootProject.ext.dependencies["smartRefreshLayout"]
+
+    //ViewPager指示器
+    api rootProject.ext.dependencies["magicIndicator"]
+
+    //shareSDK
+    api project(':mob')
+
+    //    //腾讯直播sdk
+    api(name: 'LiteAVSDK_Professional', ext: 'aar')
+    //阿里 ARouter
+    api rootProject.ext.dependencies["arouter"]
+
+    //轮播图
+    api rootProject.ext.dependencies["banner"]
+
+    //鲁班
+    api rootProject.ext.dependencies["Luban"]
+
+    //一个Picker控件，选择日期，城市用
+    api files('libs/AndroidPicker-1.5.6.jar')
+
+//    api 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    api rootProject.ext.dependencies["constraintlayout"]
+    api rootProject.ext.dependencies["gson"]
+    api rootProject.ext.dependencies["immersionbar"]
+    api files('libs/pldroid-shortvideo-3.1.1.jar')
+    api 'com.google.android:flexbox:1.0.0'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+    api 'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
+    api 'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
+
+    api rootProject.ext.dependencies["toast"]
+    api rootProject.ext.dependencies["MPAndroidChart"]
+    //骨架屏
+    api 'com.ethanhua:skeleton:1.1.2'
+    api 'io.supercharge:shimmerlayout:2.1.0'
+    //吸顶灯
+    api rootProject.ext.dependencies["GroupedAdapter"]
+
+    implementation 'com.github.liangjingkanji:Net:2.3.11'
+    implementation 'com.github.liangjingkanji:LogCat:1.1.0'
+    implementation 'com.github.liangjingkanji:Serialize:1.0.3'
+
+
+
+    // 协程库(版本自定)
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api 'com.arialyy.aria:core:3.8.15'
+    kapt 'com.arialyy.aria:compiler:3.8.15'
+}

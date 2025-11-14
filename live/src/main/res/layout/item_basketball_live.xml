@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10:00" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#D6E4FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/imgPoint"
+        app:layout_constraintRight_toRightOf="@id/imgPoint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPoint"
+        android:layout_width="@dimen/dp6"
+        android:layout_height="@dimen/dp6"
+        android:background="@drawable/shape_blue_point"
+        app:layout_constraintBottom_toBottomOf="@id/txtTime"
+        app:layout_constraintLeft_toRightOf="@id/txtTime"
+        app:layout_constraintTop_toTopOf="@id/txtTime" />
+
+    <TextView
+        android:id="@+id/txtTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp3"
+        android:layout_marginTop="@dimen/dp10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintLeft_toRightOf="@id/imgPoint"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="rocket" />
+
+    <TextView
+        android:id="@+id/txtEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@id/txtTeam"
+        app:layout_constraintRight_toLeftOf="@id/txtScore"
+        app:layout_constraintTop_toBottomOf="@id/txtTeam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp10"
+        tools:text="Mr Yao 3-point" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTeam"
+        tools:text="116-120" />
+</androidx.constraintlayout.widget.ConstraintLayout>

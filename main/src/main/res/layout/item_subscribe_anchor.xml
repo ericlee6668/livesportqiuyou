@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dp5"
+    android:layout_marginEnd="@dimen/dp5"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp15"
+    android:paddingBottom="@dimen/dp15">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_rounded_anchor"
+            android:layout_width="@dimen/yb_43dp"
+            android:layout_height="@dimen/yb_43dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_default_logo"
+            app:riv_oval="true" />
+
+        <ImageView
+            android:id="@+id/iv_palying"
+            android:layout_width="@dimen/yb_18dp"
+            android:layout_height="@dimen/yb_12dp"
+            android:layout_gravity="end"
+            android:contentDescription="@null"
+            android:src="@mipmap/icon_item_living" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_anchor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp2"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:textColor="@color/yb_ff2b2626"
+        android:textSize="@dimen/sp_14"
+        tools:text="正大直播"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/bg_btn_subscribe"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingTop="@dimen/dp6"
+        android:paddingRight="@dimen/dp15"
+        android:paddingBottom="@dimen/dp5"
+        android:text="@string/item_subscribe"
+        android:textColor="#ffffffff"
+        android:textSize="10sp" />
+
+</LinearLayout>

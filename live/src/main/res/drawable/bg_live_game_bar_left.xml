@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--背景颜色-->
+    <solid android:color="#FAAD14" />
+    <!--角的半径-->
+    <corners
+        android:topLeftRadius="@dimen/dp10"
+        android:topRightRadius="@dimen/dp10" />
+
+    <gradient
+        android:angle="90"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:startColor="#FAAD14"
+        android:endColor="@color/live_FFE490"
+        android:type="linear"
+        />
+</shape>

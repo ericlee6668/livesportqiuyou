@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/icon_login_logo" />
+
+            <ImageView
+                android:id="@+id/iv_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/live_loading" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="正在加载中..."
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <com.tencent.rtmp.ui.TXCloudVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/pk_container"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="130dp"
+            android:visibility="gone">
+
+            <com.yunbao.live.custom.MyFrameLayout4
+                android:id="@+id/left_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp" />
+
+            <com.yunbao.live.custom.MyFrameLayout4
+                android:id="@+id/right_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp" />
+
+        </FrameLayout>
+
+        <com.yunbao.live.custom.MyFrameLayout3
+            android:id="@+id/small_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="120dp"
+            app:mfl3_ratio="0.25" />
+
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+        <!--水印-->
+        <RelativeLayout
+            android:id="@+id/rl_water_mark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_water_mark1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_water_mark2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_water_mark3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_water_mark4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <com.yunbao.live.views.RecyclerCoverFlow
+            android:id="@+id/live_recycler_no_anchor"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/live_iv_pause"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_live_replay"
+            android:visibility="gone" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/live_ccl_full_screen_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/live_iv_left_play_icon"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:padding="@dimen/dp10"
+                android:src="@mipmap/icon_live_stop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0:00:00"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/live_iv_left_play_icon"
+                app:layout_constraintLeft_toRightOf="@+id/live_iv_left_play_icon"
+                app:layout_constraintTop_toTopOf="@+id/live_iv_left_play_icon" />
+
+
+            <ImageView
+                android:id="@+id/live_iv_full_screen"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:padding="@dimen/dp10"
+                android:src="@mipmap/icon_live_full_screen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</RelativeLayout>

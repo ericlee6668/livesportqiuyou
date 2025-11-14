@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp6"
+    android:background="@drawable/shape_intelligence_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/footballRealScore"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txtFootballMatchHomeName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp6"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3"
+                    tools:text="曼联" />
+
+                <TextView
+                    android:id="@+id/txtFootballMatchAwayName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp6"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.3"
+                    tools:text="曼联" />
+
+                <TextView
+                    android:id="@+id/txtMatchHomeScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/pk_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/txtFootballMatchHomeName"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.2"
+                    tools:text="2" />
+
+                <TextView
+                    android:id="@+id/txtMatchAwayScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/pk_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/txtFootballMatchAwayName"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.2"
+                    tools:text="1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            
+            <ImageView
+                android:id="@+id/teamDivider"
+                app:layout_constraintTop_toBottomOf="@id/footballRealScore"
+                android:layout_width="match_parent"
+                android:background="@color/live_gary"
+                android:layout_height="6dp"/>
+
+            <TextView
+                android:id="@+id/txtStatistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/technical_statistics"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/teamDivider" />
+
+            <View
+                android:id="@+id/statisticsDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/live_gary"
+                app:layout_constraintTop_toBottomOf="@id/txtStatistics" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/statisticsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/statisticsDivider">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/centerGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <ImageView
+                    android:id="@+id/imgHome"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:src="@mipmap/icon_default_logo"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/centerGuide"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgAway"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:src="@mipmap/icon_default_logo"
+                    app:layout_constraintLeft_toLeftOf="@id/centerGuide"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/logoDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@color/live_gary"
+                    app:layout_constraintTop_toBottomOf="@id/imgHome" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/statisticsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/logoDivider" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/statisticsGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="imgHome,imgAway,logoDivider,statisticsList"
+                    tools:visibility="visible" />
+
+                <include
+                    android:id="@+id/staticEmptyView"
+                    layout="@layout/layout_empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/listDivider"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="@dimen/dp6"
+                android:background="@color/live_gary"
+                app:layout_constraintTop_toBottomOf="@id/statisticsContainer" />
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/matchMagicTab"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_navigator_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/listDivider"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <FrameLayout
+                android:id="@+id/matchContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/matchMagicTab" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

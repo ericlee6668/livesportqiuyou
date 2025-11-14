@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/livesports-qy.iml" filepath="$PROJECT_DIR$/.idea/modules/livesports-qy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/livesports-qy.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/livesports-qy.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/livesports-qy.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/livesports-qy.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/livesports-qy.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/livesports-qy.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/livesports-qy.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/livesports-qy.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/livesports-qy.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/livesports-qy.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/livesports-qy.common.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/livesports-qy.common.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/livesports-qy.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/livesports-qy.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/livesports-qy.common.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/livesports-qy.common.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/im/livesports-qy.im.iml" filepath="$PROJECT_DIR$/.idea/modules/im/livesports-qy.im.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/im/livesports-qy.im.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/im/livesports-qy.im.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/im/livesports-qy.im.main.iml" filepath="$PROJECT_DIR$/.idea/modules/im/livesports-qy.im.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/im/livesports-qy.im.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/im/livesports-qy.im.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/live/livesports-qy.live.iml" filepath="$PROJECT_DIR$/.idea/modules/live/livesports-qy.live.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/live/livesports-qy.live.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/live/livesports-qy.live.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/live/livesports-qy.live.main.iml" filepath="$PROJECT_DIR$/.idea/modules/live/livesports-qy.live.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/live/livesports-qy.live.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/live/livesports-qy.live.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/livesports-qy.main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/livesports-qy.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/livesports-qy.main.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/main/livesports-qy.main.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/livesports-qy.main.main.iml" filepath="$PROJECT_DIR$/.idea/modules/main/livesports-qy.main.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/main/livesports-qy.main.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/main/livesports-qy.main.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mob/livesports-qy.mob.iml" filepath="$PROJECT_DIR$/.idea/modules/mob/livesports-qy.mob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mob/livesports-qy.mob.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mob/livesports-qy.mob.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mob/livesports-qy.mob.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mob/livesports-qy.mob.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mob/livesports-qy.mob.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mob/livesports-qy.mob.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/video/livesports-qy.video.iml" filepath="$PROJECT_DIR$/.idea/modules/video/livesports-qy.video.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/video/livesports-qy.video.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/video/livesports-qy.video.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/video/livesports-qy.video.main.iml" filepath="$PROJECT_DIR$/.idea/modules/video/livesports-qy.video.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/video/livesports-qy.video.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/video/livesports-qy.video.unitTest.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 字体 -->
+    <dimen name="yb_10sp">10sp</dimen>
+    <dimen name="yb_15sp">15sp</dimen>
+    <dimen name="yb_16sp">16sp</dimen>
+
+    <!--  间距 -->
+    <dimen name="yb_9dp">9dp</dimen>
+    <dimen name="yb_10dp">10dp</dimen>
+    <dimen name="yb_12dp">12dp</dimen>
+    <dimen name="yb_15dp">15dp</dimen>
+    <dimen name="yb_18dp">18dp</dimen>
+    <dimen name="yb_30dp">30dp</dimen>
+    <dimen name="yb_43dp">43dp</dimen>
+    <dimen name="yb_45dp">45dp</dimen>
+    <dimen name="yb_50dp">50dp</dimen>
+    <dimen name="yb_60dp">60dp</dimen>
+    <dimen name="yb_65dp">65dp</dimen>
+    <dimen name="yb_66dp">66dp</dimen>
+    <dimen name="yb_68dp">68dp</dimen>
+    <dimen name="yb_251dp">251dp</dimen>
+    <dimen name="yb_13dp">13dp</dimen>
+    <dimen name="yb_17dp">17dp</dimen>
+    <dimen name="yb_20dp">20dp</dimen>
+    <dimen name="yb_8dp">8dp</dimen>
+    <dimen name="yb_13sp">13sp</dimen>
+    <dimen name="yb_37dp">37dp</dimen>
+    <dimen name="yb_12sp">12sp</dimen>
+    <dimen name="yb_75dp">75dp</dimen>
+    <dimen name="yb_23dp">23dp</dimen>
+    <dimen name="yb_38dp">38dp</dimen>
+
+</resources>

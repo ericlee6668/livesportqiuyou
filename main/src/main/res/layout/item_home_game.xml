@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunbao.common.custom.MyLinearLayout7 xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dp10"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:mll4_count="2"
+    app:mll4_count_dp="30">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_item_home_game_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toStartOf="@+id/tv_game_status"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#ff2b2626"
+            android:textSize="13sp"
+            tools:ignore="MissingConstraints"
+            tools:text="英雄联盟" />
+
+        <TextView
+            android:id="@+id/tv_game_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_home_game_status_in_play"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="2.7dp"
+            android:paddingEnd="5.6dp"
+            android:paddingBottom="2.7dp"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            tools:text="比赛中" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/icon_default_logo" />
+
+            <TextView
+                android:id="@+id/tv_team_a_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/black2"
+                android:textSize="11sp"
+                tools:text="hlsjkhd" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_game_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#FF5116"
+            android:textSize="13sp"
+            tools:text="23 : 12" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/icon_default_logo" />
+
+            <TextView
+                android:id="@+id/tv_team_b_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/black2"
+                android:textSize="11sp"
+                tools:text="hlsjkhd" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_home_game_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black3"
+        android:textSize="11sp"
+        tools:text="2020LOL世界s10冠军赛" />
+</com.yunbao.common.custom.MyLinearLayout7>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginEnd="@dimen/dp10"-->
+    <!--    android:background="@drawable/bg_home_game"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_item_home_game_title"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            android:layout_marginTop="6dp"-->
+    <!--            android:layout_toStartOf="@+id/tv_game_status"-->
+    <!--            android:ellipsize="end"-->
+    <!--            android:lines="1"-->
+    <!--            android:text="英雄联盟"-->
+    <!--            android:textColor="#ff2b2626"-->
+    <!--            android:textSize="13sp"-->
+    <!--            tools:ignore="MissingConstraints" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_game_status"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:background="@drawable/bg_home_game_status_in_play"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingStart="5dp"-->
+    <!--            android:paddingTop="2.7dp"-->
+    <!--            android:paddingEnd="5.6dp"-->
+    <!--            android:paddingBottom="2.7dp"-->
+    <!--            android:text="比赛中"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:textSize="10sp" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="@dimen/dp_10"-->
+    <!--        android:layout_marginTop="13dp"-->
+    <!--        android:layout_marginEnd="@dimen/dp_10"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_left"-->
+    <!--            android:layout_width="26dp"-->
+    <!--            android:layout_height="26dp"-->
+    <!--            android:src="@mipmap/icon_default_logo" />-->
+
+    <!--        <TextView-->
+    <!--            android:gravity="center"-->
+    <!--            android:minWidth="70dp"-->
+    <!--            android:id="@+id/tv_game_result"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="14dp"-->
+    <!--            android:layout_marginEnd="14dp"-->
+    <!--            android:text="23 : 12"-->
+    <!--            android:textColor="#FF5116"-->
+    <!--            android:textSize="13sp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/iv_right"-->
+    <!--            android:layout_width="26dp"-->
+    <!--            android:layout_height="26dp"-->
+    <!--            android:src="@mipmap/icon_default_logo" />-->
+    <!--    </LinearLayout>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_item_home_game_hint"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:lines="1"-->
+    <!--        android:text="2020LOL世界s10冠军赛"-->
+    <!--        android:textColor="@color/black3"-->
+    <!--        android:textSize="11sp" />-->
+    <!--</LinearLayout>-->

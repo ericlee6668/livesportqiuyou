@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp6"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginRight="@dimen/dp6"
+            android:background="@drawable/shape_corner_bg"
+            android:divider="@drawable/live_up_divider"
+            android:dividerPadding="1px"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp6"
+                android:paddingRight="@dimen/dp6"
+                android:text="比分"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <include
+                android:id="@+id/scoreHeader"
+                layout="@layout/basketball_scores"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <include
+                android:id="@+id/homeScores"
+                layout="@layout/basketball_scores"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <include
+                android:id="@+id/awayScores"
+                layout="@layout/basketball_scores"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp6"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginRight="@dimen/dp6"
+            android:background="@drawable/shape_corner_bg"
+            android:orientation="vertical">
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/basketballAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_navigator_height"
+                android:layout_marginLeft="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp6"
+                android:layout_marginRight="@dimen/dp60"
+                android:layout_marginBottom="@dimen/dp6" />
+
+            <FrameLayout
+                android:id="@+id/frameAnalysis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

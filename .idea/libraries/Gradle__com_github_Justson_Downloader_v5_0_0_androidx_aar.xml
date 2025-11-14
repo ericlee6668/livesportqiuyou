@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Justson:Downloader:v5.0.0-androidx@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c373bfff5e6f9bb354f4681b3983801c/jetified-Downloader-v5.0.0-androidx/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c373bfff5e6f9bb354f4681b3983801c/jetified-Downloader-v5.0.0-androidx/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c373bfff5e6f9bb354f4681b3983801c/jetified-Downloader-v5.0.0-androidx/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c373bfff5e6f9bb354f4681b3983801c/jetified-Downloader-v5.0.0-androidx/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Justson/Downloader/v5.0.0-androidx/1c29fdca8818d55ba6338434d0fd7994db870ea3/Downloader-v5.0.0-androidx-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

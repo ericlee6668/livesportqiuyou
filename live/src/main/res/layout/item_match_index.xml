@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7FAFF">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#EDF2FD"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingTop="@dimen/dp6"
+        android:paddingBottom="@dimen/dp6"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtInitVictory"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="公司" />
+
+    <TextView
+        android:id="@+id/txtInitVictory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtName"
+        app:layout_constraintRight_toLeftOf="@id/txtInitTie"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1.0" />
+
+    <TextView
+        android:id="@+id/txtInitTie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtInitVictory"
+        app:layout_constraintRight_toLeftOf="@id/txtInitLose"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1.0" />
+
+    <TextView
+        android:id="@+id/txtInitLose"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtInitTie"
+        app:layout_constraintRight_toLeftOf="@id/txtTimelyVictory"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1.0" />
+
+    <TextView
+        android:id="@+id/txtTimelyVictory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#389E0D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtInitLose"
+        app:layout_constraintRight_toLeftOf="@id/txtTimelyTie"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1.0" />
+
+    <TextView
+        android:id="@+id/txtTimelyTie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#F5222D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtTimelyVictory"
+        app:layout_constraintRight_toLeftOf="@id/txtTimelyLose"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1.0" />
+
+    <TextView
+        android:id="@+id/txtTimelyLose"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#F5222D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtTimelyTie"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1.0" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtInitLose"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

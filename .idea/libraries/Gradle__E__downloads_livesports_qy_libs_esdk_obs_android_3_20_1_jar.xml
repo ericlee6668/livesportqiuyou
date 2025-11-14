@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: E./downloads/livesports-qy/libs/esdk-obs-android-3.20.1.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/esdk-obs-android-3.20.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

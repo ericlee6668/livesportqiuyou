@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtMatch"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp6"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtAgainst"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/fight_date_time" />
+
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp6"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtAgainst"
+        app:layout_constraintTop_toBottomOf="@id/txtMatch"
+        tools:text="@string/fight_date_time" />
+
+    <TextView
+        android:id="@+id/txtAgainst"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp6"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintLeft_toRightOf="@id/txtDateTime"
+        app:layout_constraintRight_toLeftOf="@id/txtGoalGo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@string/against_team" />
+
+    <TextView
+        android:id="@+id/txtGoalGo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp6"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@id/txtAgainst"
+        app:layout_constraintRight_toLeftOf="@id/txtBs"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/txtWin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/red"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@id/txtAgainst"
+        app:layout_constraintRight_toLeftOf="@id/txtBs"
+        app:layout_constraintTop_toBottomOf="@id/txtGoalGo"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/txtBs"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp6"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@id/txtGoalGo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/bs" />
+
+    <TextView
+        android:id="@+id/txtBsValue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/red"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@id/txtGoalGo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtBs"
+        tools:text="@string/bs" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtDateTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtAgainst"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtGoalGo"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

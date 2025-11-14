@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtFavorableHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp6"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp10"
+            android:text="@string/favorable_information"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/icon_favorable"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFavorable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginRight="@dimen/dp15"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/black2"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/txtFavorableHeader"
+            tools:text="@string/accept" />
+
+        <ImageView
+            android:id="@+id/divider1"
+            app:layout_constraintTop_toBottomOf="@id/txtFavorable"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_width="match_parent"
+            android:background="@color/live_gary"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/txtUnFavorableHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp6"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp10"
+            android:text="@string/unfavorable_information"
+            android:textColor="#389E0D"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/icon_unfavorable"
+            app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+        <TextView
+            android:id="@+id/txtUnFavorable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginRight="@dimen/dp15"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/black2"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/txtUnFavorableHeader"
+            tools:text="@string/delete" />
+
+        <ImageView
+            android:id="@+id/divider2"
+            app:layout_constraintTop_toBottomOf="@id/txtUnFavorable"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_width="match_parent"
+            android:background="@color/live_gary"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/txtNeutralHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp6"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp15"
+            android:paddingBottom="@dimen/dp10"
+            android:text="@string/neutral_information"
+            android:textColor="#2B2626"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/icon_neutral"
+            app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+        <TextView
+            android:id="@+id/txtNeutral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginRight="@dimen/dp15"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/black2"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/txtNeutralHeader"
+            tools:text="@string/cancel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

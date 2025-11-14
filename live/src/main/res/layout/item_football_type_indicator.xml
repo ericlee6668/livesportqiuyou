@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp6"
+    android:paddingBottom="@dimen/dp6">
+
+    <TextView
+        android:id="@+id/txtGoal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="@string/football_goal"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_football_goal"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtPenalty"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPenalty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="@string/penalty_kick"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_penalty_kick"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtGoal"
+        app:layout_constraintRight_toLeftOf="@id/txtOwn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtOwn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="@string/own_goals"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_own_goals"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtPenalty"
+        app:layout_constraintRight_toLeftOf="@id/txtRed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="红牌"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_red_card"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtOwn"
+        app:layout_constraintRight_toLeftOf="@+id/txtYellow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtYellow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp10"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="黄牌"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_yellow_card"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtRed"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtYellowRed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp6"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="两黄一红"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_yellow_red"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtSubstitution"
+        app:layout_constraintTop_toBottomOf="@id/txtGoal" />
+
+    <TextView
+        android:id="@+id/txtSubstitution"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="换人"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_football_substitution"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtYellowRed"
+        app:layout_constraintRight_toLeftOf="@id/txtCorner"
+        app:layout_constraintTop_toBottomOf="@id/txtPenalty" />
+
+    <TextView
+        android:id="@+id/txtCorner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="角球"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_corner_kick"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtSubstitution"
+        app:layout_constraintRight_toLeftOf="@id/txtFree"
+        app:layout_constraintTop_toBottomOf="@id/txtOwn" />
+
+    <TextView
+        android:id="@+id/txtFree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="任意球"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_free_kick"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtCorner"
+        app:layout_constraintRight_toLeftOf="@+id/txtOther"
+        app:layout_constraintTop_toBottomOf="@id/txtRed" />
+
+    <TextView
+        android:id="@+id/txtOther"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp6"
+        android:layout_marginEnd="@dimen/dp10"
+        android:drawablePadding="@dimen/dp3"
+        android:maxLines="1"
+        android:text="其它"
+        android:textColor="@color/black"
+        app:drawableLeftCompat="@drawable/icon_football_other"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/txtFree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtYellow" />
+</androidx.constraintlayout.widget.ConstraintLayout>

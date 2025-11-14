@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="live_game_analysis_no_data">暂无交手数据</string>
+    <string name="live_game_analysis_recent_no_data">近期暂无数据</string>
+
+    <string name="favorable_information">有利情报</string>
+    <string name="unfavorable_information">不利情报</string>
+    <string name="neutral_information">中立情报</string>
+    <string name="handicap">让球</string>
+    <string name="europe_exponent">欧指</string>
+    <string name="number_of_goals">进球数</string>
+    <string name="intelligence_holder">暂无数据</string>
+    <string name="football_substitute">替补阵容</string>
+    <string name="football_injury">伤停情况</string>
+    <string name="technical_statistics">技术统计</string>
+    <string name="important_events">重要事件</string>
+    <string name="text_live">文字直播</string>
+    <string name="stoppage_time">伤停补时</string>
+    <string name="midfield">中场</string>
+    <string name="game_end">结束</string>
+    <string name="football_goal">进球</string>
+    <string name="penalty_kick">点球</string>
+    <string name="own_goals">乌龙球</string>
+    <string name="assist">助攻</string>
+    <string name="var">VAR</string>
+    <string name="ranking">排名</string>
+    <string name="team">球队</string>
+    <string name="integral">积分</string>
+    <string name="integral_ranking">积分排名</string>
+    <string name="result">胜/负/平</string>
+    <string name="goal_difference">进/失</string>
+    <string name="fight_history">交战历史</string>
+    <string name="against_team">对阵</string>
+    <string name="goal_go">让球</string>
+    <string name="bs">大小</string>
+    <string name="subject_and_object">同主客</string>
+    <string name="fight_date_time">日期/赛事</string>
+    <string name="fight_home"><Data><![CDATA[<font color="#F5222D">%1$s</font> %2$s:%3$s <font color="#2B2626">%4$s</font>]]></Data></string>
+    <string name="fight_away"><Data><![CDATA[<font color="#2B2626">%1$s</font> %2$s:%3$s <font color="#389E0D">%4$s</font>]]></Data></string>
+    <string name="player">%1$s-%2$s</string>
+    <string name="history_victory"><Data><![CDATA[近%1$d场：%2$s<font color="#F5222D">%3$d</font>胜<font color="#389E0D">%4$d</font>负]]></Data></string>
+    <string name="history_victory_football"><Data><![CDATA[近%1$d场：%2$s<font color="#FAAD14">%3$d</font>胜<font color="#4D76FF">%4$d</font>负  <font color="#389E0D">%5$d</font>平]]></Data></string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sportsLive.qy">
+
+
+
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:maxSdkVersion="28"/>
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.READ_CALL_LOG"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.WRITE_CALL_LOG"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.READ_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.WRITE_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_WAP_PUSH"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_MMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.SEND_MMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.PROCESS_OUTGOING_CALLS"
+        tools:node="remove" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.NETWORK_PROVIDER" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <application
+        android:name="com.sportsLive.qy.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
+        tools:replace="android:name">
+        <activity
+            android:name="com.sportsLive.qy.activity.LauncherActivity"
+            android:theme="@style/LauncherAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--        &lt;!&ndash;微信登录回调页面&ndash;&gt;-->
+        <!--        <activity-->
+        <!--            android:name=".wxapi.WXEntryActivity"-->
+        <!--            android:exported="true"-->
+        <!--            android:launchMode="singleTop"-->
+        <!--            android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!--        &lt;!&ndash;微信支付回调页面&ndash;&gt;-->
+        <!--        <activity-->
+        <!--            android:name=".wxapi.WXPayEntryActivity"-->
+        <!--            android:exported="true"-->
+        <!--            android:launchMode="singleTop"-->
+        <!--            android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+
+
+
+        <!--友盟统计-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${umengAppKey}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="default" />
+        <!--友盟统计 end-->
+
+        <!--服务器地址-->
+        <meta-data
+            android:name="SERVER_HOST"
+            android:value="${serverHost}" />
+
+        <meta-data
+            android:name="SHARE_LINK"
+            android:value="${shareLink}" />
+
+        <!--短视频服务器地址-->
+<!--        <meta-data-->
+<!--            android:name="VIDEO_SERVER_HOST"-->
+<!--            android:value="${videoHost}" />-->
+
+<!--        &lt;!&ndash;赛事WS地址&ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="WEBSOCKET_MATCH"-->
+<!--            android:value="${websocket_match}" />-->
+
+<!--        &lt;!&ndash;聊天WS地址&ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="WEBSOCKET_CHAT"-->
+<!--            android:value="${websocket_chat}" />-->
+
+<!--        &lt;!&ndash;体育服务器地址&ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="SPORTS_SERVER_HOST"-->
+<!--            android:value="${sportsHost}" />-->
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="@dimen/yb_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/yb_30dp"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/tvExitLogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/yb_50dp"
+        android:layout_marginTop="@dimen/yb_38dp"
+        android:background="@drawable/login_btn"
+        android:layout_marginStart="@dimen/yb_65dp"
+        android:layout_marginEnd="@dimen/yb_65dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:onClick="exitLoginClick"
+        android:textColor="@color/white"
+        android:text="@string/setting_exit"
+        android:textSize="@dimen/yb_16sp" />
+
+</LinearLayout>

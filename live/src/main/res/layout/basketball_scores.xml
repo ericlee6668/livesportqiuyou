@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtTeam"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtFirst"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="球队" />
+
+    <TextView
+        android:id="@+id/txtFirst"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#F7FAFF"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/txtTeam"
+        app:layout_constraintRight_toLeftOf="@id/txtSecond"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Q1" />
+
+    <TextView
+        android:id="@+id/txtSecond"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#F7FAFF"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/txtFirst"
+        app:layout_constraintRight_toLeftOf="@id/txtThird"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Q2" />
+
+    <TextView
+        android:id="@+id/txtThird"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#F7FAFF"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/txtSecond"
+        app:layout_constraintRight_toLeftOf="@id/txtFourth"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Q3" />
+
+    <TextView
+        android:id="@+id/txtFourth"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#F7FAFF"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/txtThird"
+        app:layout_constraintRight_toLeftOf="@id/txtExtra"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Q4" />
+
+    <TextView
+        android:id="@+id/txtExtra"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#F7FAFF"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/txtFourth"
+        app:layout_constraintRight_toLeftOf="@id/txtScore"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="QT" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/txtExtra"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="总分" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtTeam"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtFirst"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtSecond"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtThird"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtFourth"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:background="@color/live_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txtExtra"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

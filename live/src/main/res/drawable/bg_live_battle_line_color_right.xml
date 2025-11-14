@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--角的半径-->
+    <corners
+        android:bottomLeftRadius="@dimen/yb_33dp"
+        android:bottomRightRadius="@dimen/yb_33dp"
+        android:topLeftRadius="@dimen/yb_33dp"
+        android:topRightRadius="@dimen/yb_33dp" />
+
+    <gradient
+        android:angle="180"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:startColor="@color/live_0CC3C1"
+        android:endColor="@color/live_87E7DE"
+        android:type="linear"
+        />
+
+</shape>
